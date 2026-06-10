@@ -1528,7 +1528,7 @@ pub fn get_prefill(input: &ZetaPromptInput, format: ZetaFormat) -> String {
     get_prefill_for_format(format, context, &editable_range)
 }
 
-fn format_edit_history_within_budget(
+pub fn format_edit_history_within_budget(
     events: &[Arc<Event>],
     file_marker: &str,
     edit_history_name: &str,
