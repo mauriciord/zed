@@ -89,6 +89,7 @@ pub fn build_prompt(example: &Example) -> Result<String> {
             diff,
             predicted: _,
             in_open_source_repo: _,
+            ..
         } = event.as_ref();
         edit_history.push_str(&format!("--- a{}\n", old_path.display()));
         edit_history.push_str(&format!("+++ b{}\n", path.display()));
